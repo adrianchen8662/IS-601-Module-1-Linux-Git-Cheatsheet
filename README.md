@@ -30,7 +30,7 @@ git commit [--all | -a] [--patch | -p] [--reuse-message=<commit> | -C <commit>]
 
 `git commit` records the staged changes to the local repository as a new commit.
 
-Examples:
+**Examples:**  
 `git commit -m "Fix login bug"` – Commit staged changes with a message  
 `git commit -a -m "Update config"` – Stage and commit tracked files in one step  
 `git commit --amend` – Modify the most recent commit (message or content)  
@@ -44,8 +44,24 @@ git push [--all] [--prune] [--mirror] [--dry-run]
 
 `git push` uploads local commits to a remote repository.
 
-Examples:
+**Examples:**  
 `git push` – Push current branch to its upstream remote  
 `git push origin main` – Push main branch to origin  
 `git push -u origin feature-x` – Push and set upstream tracking branch  
 `git push --force-with-lease` – Force push safely (checks remote state first)  
+
+### Git Merge
+```bash
+git merge [--commit | --no-commit] [--edit | --no-edit]
+	[--ff | --no-ff | --ff-only] [--log] [--stat]
+	[--squash | --no-squash] [--strategy=<strategy>]
+	[--abort] [--continue] [--quit]
+	[<commit>…​]
+```
+
+`git merge` combines changes from one or more branches into the current branch.
+
+**Examples:**
+`git merge feature-x` – Merge feature-x into the current branch  
+`git merge --no-ff feature-x` – Create a merge commit even if fast-forward is possible  
+`git merge --abort` – Abort a merge with conflicts and restore pre-merge state  
