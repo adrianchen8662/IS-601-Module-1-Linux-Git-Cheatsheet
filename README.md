@@ -34,3 +34,18 @@ Examples:
 `git commit -m "Fix login bug"` – Commit staged changes with a message  
 `git commit -a -m "Update config"` – Stage and commit tracked files in one step  
 `git commit --amend` – Modify the most recent commit (message or content)  
+
+### Git Push
+```bash
+git push [--all] [--prune] [--mirror] [--dry-run]
+	[--force | --force-with-lease] [--tags]
+	[--set-upstream | -u] [<repository> [<refspec>…​]]
+```
+
+`git push` uploads local commits to a remote repository.
+
+Examples:
+`git push` – Push current branch to its upstream remote  
+`git push origin main` – Push main branch to origin  
+`git push -u origin feature-x` – Push and set upstream tracking branch  
+`git push --force-with-lease` – Force push safely (checks remote state first)  
