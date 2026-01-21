@@ -17,3 +17,20 @@ git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [-
 `git add .` - Add all local changes to the Git staging area  
 `git add [filename]` - Add a single file to the Git staging area. Also works on directories/subdirectories  
 `git add -p` - Add selective chunks out of files to the Git staging area  
+
+### Git Commit
+```bash
+git commit [--all | -a] [--patch | -p] [--reuse-message=<commit> | -C <commit>]
+	[--reedit-message=<commit> | -c <commit>] [--fixup <commit>]
+	[--squash <commit>] [--reset-author] [--short] [--branch]
+	[--porcelain] [--long] [--null] [--file=<file> | -F <file>]
+	[--message=<msg> | -m <msg>] [--edit | -e] [--no-edit]
+	[--amend] [--no-verify] [--allow-empty] [--allow-empty-message]
+```
+
+`git commit` records the staged changes to the local repository as a new commit.
+
+Examples:
+`git commit -m "Fix login bug"` – Commit staged changes with a message  
+`git commit -a -m "Update config"` – Stage and commit tracked files in one step  
+`git commit --amend` – Modify the most recent commit (message or content)  
