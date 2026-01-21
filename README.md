@@ -61,7 +61,26 @@ git merge [--commit | --no-commit] [--edit | --no-edit]
 
 `git merge` combines changes from one or more branches into the current branch.
 
-**Examples:**
+**Examples:**  
 `git merge feature-x` – Merge feature-x into the current branch  
 `git merge --no-ff feature-x` – Create a merge commit even if fast-forward is possible  
 `git merge --abort` – Abort a merge with conflicts and restore pre-merge state  
+
+### Git Rebase
+```bash
+git rebase [--onto <newbase>] [--continue | --abort | --skip]
+	[--interactive | -i] [--rebase-merges | -r]
+	[--autosquash] [--autostash]
+	[--keep-empty] [--reapply-cherry-picks]
+	[--strategy=<strategy>] [--strategy-option=<option>]
+	[<upstream> [<branch>]]
+```
+
+`git rebase` reapplies commits from one branch on top of another base commit, creating a linear commit history.
+
+**Examples:**  
+`git rebase main` – Rebase the current branch onto main  
+`git rebase -i HEAD~5` – Interactively edit, squash, reorder, or drop the last 5 commits  
+`git rebase --continue` – Continue a rebase after resolving conflicts  
+`git rebase --abort` – Cancel the rebase and restore the previous state  
+`git rebase --onto main dev feature-x` – Move feature-x commits from dev onto main  
