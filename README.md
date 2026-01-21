@@ -84,3 +84,23 @@ git rebase [--onto <newbase>] [--continue | --abort | --skip]
 `git rebase --continue` – Continue a rebase after resolving conflicts  
 `git rebase --abort` – Cancel the rebase and restore the previous state  
 `git rebase --onto main dev feature-x` – Move feature-x commits from dev onto main  
+
+### Git Stash
+```bash
+git stash [push [--keep-index | -k] [--include-untracked | -u]
+	[--all | -a] [--patch | -p] [-m <message>]]
+git stash list
+git stash show [--patch] [<stash>]
+git stash apply [--index] [<stash>]
+git stash pop [--index] [<stash>]
+git stash drop [<stash>]
+git stash clear
+```
+
+`git stash` temporarily saves uncommitted changes so you can work on something else.
+
+**Examples:**  
+`git stash` – Save modified tracked files and clean working directory  
+`git stash -u` – Stash including untracked files  
+`git stash list` – Show all stashed changes  
+`git stash pop` – Reapply and remove the most recent stash  
