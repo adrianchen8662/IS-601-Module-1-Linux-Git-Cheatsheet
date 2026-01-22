@@ -59,6 +59,17 @@ find [path…] [expression]
 `find . -size +100M` – Find files larger than 100 MB  
 `find . -name "*.tmp" -delete` – Find and delete files  
 
+### pwd
+```bash
+pwd [-L | -P]
+```
+
+`pwd` prints the current working directory.
+
+Examples:
+`pwd` – Show the current directory path
+`pwd -P` – Show the physical path (resolving symlinks)
+
 ## Git Commands
 ### Git Add
 ```bash
