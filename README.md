@@ -95,6 +95,20 @@ mv [--interactive | -i] [--force | -f]
 `mv old.txt new.txt` – Rename a file  
 `mv -i *.conf backup/` – Prompt before overwriting  
 
+### rm
+```bash
+rm [--recursive | -r] [--force | -f]
+	[--interactive | -i] file…
+```
+
+`rm` deletes files and directories.
+
+**Examples:**  
+`rm file.txt` – Remove a file
+`rm -r folder/` – Remove a directory and its contents
+`rm -rf build/` – Force delete directory (use with caution)
+`rm -i *.log` – Prompt before each removal
+
 ## Git Commands
 ### Git Add
 ```bash
