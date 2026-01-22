@@ -104,12 +104,27 @@ rm [--recursive | -r] [--force | -f]
 `rm` deletes files and directories.
 
 **Examples:**  
-`rm file.txt` – Remove a file
-`rm -r folder/` – Remove a directory and its contents
-`rm -rf build/` – Force delete directory (use with caution)
-`rm -i *.log` – Prompt before each removal
+`rm file.txt` – Remove a file  
+`rm -r folder/` – Remove a directory and its contents  
+`rm -rf build/` – Force delete directory (use with caution)  
+`rm -i *.log` – Prompt before each removal  
 
 ## Git Commands
+### Git Init
+```bash
+git init [--bare] [--shared[=<permissions>]]
+	[--initial-branch=<name>] [--separate-git-dir=<git-dir>]
+	[<directory>]
+```
+
+`git init` creates a new Git repository in the current directory (or a specified directory).
+
+**Examples:**  
+`git init` – Initialize a new Git repository in the current directory  
+`git init my-project` – Create and initialize a repository in my-project/  
+`git init --initial-branch=main` – Initialize with main as the default branch  
+`git init --bare repo.git` – Create a bare repository (commonly used for remotes)  
+
 ### Git Add
 ```bash
 git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
