@@ -1,6 +1,19 @@
 # IS 601 - Module 1: Assignment-Linux and GIT Command Cheat Sheet
 
 ## Linux Commands
+### cd
+```bash
+cd [-L | -P] [directory]
+```
+
+`cd` changes the current working directory.
+
+Examples:
+`cd /etc` – Change to the /etc directory
+`cd ..` – Move up one directory level
+`cd ~` – Go to the home directory
+`cd -` – Switch to the previous directory
+
 
 ## Git Commands
 ### Git Add
