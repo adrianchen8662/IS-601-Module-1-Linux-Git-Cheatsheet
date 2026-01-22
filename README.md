@@ -1,5 +1,14 @@
 # IS 601 - Module 1: Assignment-Linux and GIT Command Cheat Sheet
 
+Commits were done using the following workflow:  
+`git checkout -b [Branch Name]` - Create and swap to branch  
+`git add . ` - Add changes after edits to README are completed  
+`git commit -m "[Commit Name]"` - Stage changes  
+`git push --set-upstream origin [Branch Name]` - push changes to branch and set the upstream to the remote repository  
+`git checkout main` - Swap back to main directory  
+`git merge --no-ff [Branch Name] -m "Merge [Branch Name] into main"` - Merge changes into main without fast-forwarding to keep the merge commit. Usually, this would be done through a pull request instead  
+`git push` - Push changes to remote
+
 ## Linux Commands
 ### cd
 ```bash
