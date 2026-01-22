@@ -30,6 +30,22 @@ ls [--all | -a] [--long | -l] [--human-readable | -h]
 `ls -lh` – Show file sizes in human-readable format  
 `ls -R` – Recursively list directories  
 
+### grep
+```
+grep [--ignore-case | -i] [--recursive | -r]
+	[--line-number | -n] [--invert-match | -v]
+	[--extended-regexp | -E] [--fixed-strings | -F]
+	[pattern] [file…]
+```
+
+`grep` searches for text patterns in files.
+
+**Examples:**  
+`grep "error" logfile.txt` – Search for “error” in a file  
+`grep -i "warning" *.log` – Case-insensitive search  
+`grep -rn "TODO" .` – Recursively search with line numbers  
+`ps aux | grep ssh` – Search command output  
+
 ## Git Commands
 ### Git Add
 ```bash
