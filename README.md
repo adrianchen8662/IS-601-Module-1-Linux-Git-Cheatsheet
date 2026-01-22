@@ -8,12 +8,27 @@ cd [-L | -P] [directory]
 
 `cd` changes the current working directory.
 
-Examples:
-`cd /etc` – Change to the /etc directory
-`cd ..` – Move up one directory level
-`cd ~` – Go to the home directory
-`cd -` – Switch to the previous directory
+**Examples:**  
+`cd /etc` – Change to the /etc directory  
+`cd ..` – Move up one directory level  
+`cd ~` – Go to the home directory  
+`cd -` – Switch to the previous directory  
 
+### ls
+```
+ls [--all | -a] [--long | -l] [--human-readable | -h]
+	[--recursive | -R] [--sort=time | -t]
+	[--reverse | -r] [--classify | -F]
+	[<file>…]
+```
+
+`ls` lists files and directories.
+
+**Examples:**  
+`ls` – List files in the current directory  
+`ls -la` – List all files with detailed information  
+`ls -lh` – Show file sizes in human-readable format  
+`ls -R` – Recursively list directories  
 
 ## Git Commands
 ### Git Add
