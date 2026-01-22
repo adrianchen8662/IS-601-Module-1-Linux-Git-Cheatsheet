@@ -125,6 +125,24 @@ git init [--bare] [--shared[=<permissions>]]
 `git init --initial-branch=main` – Initialize with main as the default branch  
 `git init --bare repo.git` – Create a bare repository (commonly used for remotes)  
 
+### Git Clone
+```bash
+git clone [--recursive] [--branch <name> | -b <name>]
+	[--depth <depth>] [--single-branch]
+	[--shallow-submodules] [--mirror]
+	[--bare] [--recurse-submodules]
+	[--origin <name>] [--config <key>=<value>]
+	<repository> [<directory>]
+```
+
+`git clone` creates a local copy of an existing remote repository.
+
+**Examples:**  
+`git clone git@github.com:user/repo.git` – Clone using SSH  
+`git clone -b develop repo.git` – Clone and check out the develop branch  
+`git clone --depth 1 repo.git` – Perform a shallow clone (latest commit only)  
+`git clone --recursive repo.git` – Clone repository including submodules  
+
 ### Git Add
 ```bash
 git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
