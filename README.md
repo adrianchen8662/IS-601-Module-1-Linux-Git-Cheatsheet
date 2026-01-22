@@ -15,7 +15,7 @@ cd [-L | -P] [directory]
 `cd -` – Switch to the previous directory  
 
 ### ls
-```
+```bash
 ls [--all | -a] [--long | -l] [--human-readable | -h]
 	[--recursive | -R] [--sort=time | -t]
 	[--reverse | -r] [--classify | -F]
@@ -31,7 +31,7 @@ ls [--all | -a] [--long | -l] [--human-readable | -h]
 `ls -R` – Recursively list directories  
 
 ### grep
-```
+```bash
 grep [--ignore-case | -i] [--recursive | -r]
 	[--line-number | -n] [--invert-match | -v]
 	[--extended-regexp | -E] [--fixed-strings | -F]
@@ -45,6 +45,19 @@ grep [--ignore-case | -i] [--recursive | -r]
 `grep -i "warning" *.log` – Case-insensitive search  
 `grep -rn "TODO" .` – Recursively search with line numbers  
 `ps aux | grep ssh` – Search command output  
+
+### find
+```bash
+find [path…] [expression]
+```
+
+`find` searches for files and directories based on criteria such as name, type, or time.
+
+**Examples:**  
+`find . -name "*.txt"` – Find all .txt files  
+`find /var/log -type f` – Find regular files  
+`find . -size +100M` – Find files larger than 100 MB  
+`find . -name "*.tmp" -delete` – Find and delete files  
 
 ## Git Commands
 ### Git Add
