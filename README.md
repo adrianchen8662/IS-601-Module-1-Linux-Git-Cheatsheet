@@ -82,6 +82,19 @@ mkdir [--parents | -p] [--mode=<mode> | -m] directory…
 `mkdir -p projects/app/src` – Create nested directories  
 `mkdir -m 755 public` – Create directory with permissions   
 
+### mv
+```bash
+mv [--interactive | -i] [--force | -f]
+	[--no-clobber | -n] source… destination
+```
+
+`mv` moves or renames files and directories.
+
+**Examples:**  
+`mv file.txt docs/` – Move a file to a directory  
+`mv old.txt new.txt` – Rename a file  
+`mv -i *.conf backup/` – Prompt before overwriting  
+
 ## Git Commands
 ### Git Add
 ```bash
