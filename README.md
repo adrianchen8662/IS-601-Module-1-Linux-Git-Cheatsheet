@@ -70,6 +70,18 @@ Examples:
 `pwd` – Show the current directory path
 `pwd -P` – Show the physical path (resolving symlinks)
 
+### mkdir
+```bash
+mkdir [--parents | -p] [--mode=<mode> | -m] directory…
+```
+
+`mkdir` creates new directories.
+
+**Examples:**  
+`mkdir test` – Create a directory named test   
+`mkdir -p projects/app/src` – Create nested directories  
+`mkdir -m 755 public` – Create directory with permissions   
+
 ## Git Commands
 ### Git Add
 ```bash
